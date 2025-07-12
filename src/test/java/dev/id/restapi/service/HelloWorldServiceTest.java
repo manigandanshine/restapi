@@ -12,7 +12,7 @@ class HelloWorldServiceTest {
     void testCreateHelloWorldFile() throws IOException {
         String result = service.createHelloWorldFile();
         assertNotNull(result);
-        assertTrue(result.startsWith("xHello, World from Spring Boot! File created: "));
+        assertTrue(result.startsWith("Hello, World from Spring Boot! File created: "));
     }
 
     @Test
