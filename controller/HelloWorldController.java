@@ -1,17 +1,8 @@
-package dev.id.restapi.controller;
-
-import dev.id.restapi.service.HelloWorldService;
+// ...existing code...
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.io.IOException;
-
-
-@RestController // This annotation marks the class as a REST controller
+import dev.id.restapi.service.HelloWorldService;
+// ...existing code...
 public class HelloWorldController {
-
 
     @Autowired
     private HelloWorldService helloWorldService;
@@ -35,3 +26,4 @@ public class HelloWorldController {
         return helloWorldService.greet(name);
     }
 }
+
