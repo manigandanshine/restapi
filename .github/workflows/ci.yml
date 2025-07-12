@@ -74,5 +74,4 @@ jobs:
         push: true # Set to true to push the image to the registry
         tags: | # Define the image tags
           ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest # Tag with 'latest'
-          ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:${{ github.sha }} # Tag with the commit SHA for unique versions
         # The JAR is already in build/libs due to download-artifact, so no build-args needed for copying.
